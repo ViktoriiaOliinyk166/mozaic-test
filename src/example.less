@@ -1,0 +1,74 @@
+@import (reference) '@blueprintjs/core/lib/less/variables';
+
+html,
+body,
+#app,
+.react-mosaic{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.react-mosaic {
+  .actions-label {
+    margin-right: 10px;
+  }
+
+  .theme-selection {
+    margin: 0;
+  }
+
+  .navbar-separator {
+    height: 20px;
+    border-left: 1px solid gray;
+    margin: 10px;
+  }
+
+  .@{ns}-navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .@{ns}-navbar-heading a {
+    color: white;
+
+    .version {
+      color: gray;
+    }
+  }
+
+  > .mosaic {
+    height: 100vh;
+    width: 100%;
+  }
+
+
+
+  .toolbar-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.example-window {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .ad-container {
+    margin-top: 20px;
+  }
+}
